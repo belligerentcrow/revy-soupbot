@@ -12,12 +12,10 @@ import bot
 import aiohttp
 import requests
 
-## START IT WITH
-## $ python -u "c:\Users\Ardizzone\Desktop\Programmini\bot\main.py"
-
+# UPDATED: 25/11/2022, 15:22
 
 def run_discord_bot():
-    TOKEN = 'OTc1NzQ3MDkwNTQ4NDA0Mjc0.GLJKk9.LQQsxCfRQvvo_X4Zx2MNnahBvNRB_iQoPGWECE'
+    TOKEN = '///////////////////////[REDACTED]/////////////////////////'
     intents = discord.Intents.default()
     intents.message_content = True
     intents.members = True; 
