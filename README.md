@@ -22,6 +22,9 @@
 - ```;roll [Number]``` - rolls a die and returns a number between 1 and "Number". returns funny messages for crits. 
   - Example: ```;roll 20``` rolls a d20, ```;roll 100``` rolls a d100
 - ```;f``` - spams F in the chat
+- ```;anime``` - replies with a random anime from a list of the ones i like and sends the first youtube trailer she finds with that query
+- ```;manga``` - replies with a random manga from a list of the ones i like
+  - if you don't like these recs either go build your own bot or cope i suppose! <3
 
 ***
 
@@ -60,11 +63,7 @@ no i will not elaborate on these, go read the code if you want
 
 ## more "complex" trigger words
 
-- ```anime``` - replies with a random anime from a list of the ones i like and sends the first youtube trailer she finds with that query
 
-- ```manga``` - replies with a random manga from a list of the ones i like
-
-if you don't like them either go build your own bot or cope i suppose! <3
 
 - ```i'm sad```, ```:((``` - sends one uplifting thing from a list, choosing one at random
 
