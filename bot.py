@@ -12,13 +12,12 @@ import bot
 import aiohttp
 import requests
 
-
-# updated: 25/11/2022, 15:10 
-
+## START IT WITH
+## $ python -u "c:\Users\Ardizzone\Desktop\Programmini\bot\main.py"
 
 
 def run_discord_bot():
-    TOKEN = '//////////////[REDACTED]////////////////'
+    TOKEN = 'OTc1NzQ3MDkwNTQ4NDA0Mjc0.GLJKk9.LQQsxCfRQvvo_X4Zx2MNnahBvNRB_iQoPGWECE'
     intents = discord.Intents.default()
     intents.message_content = True
     intents.members = True; 
@@ -61,7 +60,75 @@ def run_discord_bot():
         #posts a blahaj
         await ctx.send("https://media2.giphy.com/media/XC1BqjgscMp2tm1s5Y/giphy.gif?cid=790b7611287113b3e53b09439797c455f953969c3a92c42e&rid=giphy.gif&ct=g")
 
+    @bot.command()
+    async def anime(ctx):
+        randVal = random.randint(0,13)
+        if randVal == 0:
+            mystring = "Chainsaw Man"
+        elif randVal == 1:
+            mystring = "Neon Genesis Evangelion"
+        elif randVal == 2: 
+            mystring = "The Aquatope on White Sand"
+        elif randVal == 3:
+            mystring = "Black Lagoon"
+        elif randVal == 4:
+            mystring = "Bloom Into You"
+        elif randVal == 5:
+            mystring = "Cowboy Bebop"
+        elif randVal == 6: 
+            mystring = "Gunbuster & Diebuster"
+        elif randVal == 7:
+            mystring = "Lycoris Recoil"
+        elif randVal == 8:
+            mystring = "Little Witch Academia"
+        elif randVal == 9:
+            mystring = "Megalobox"
+        elif randVal == 10:
+            mystring = "Madoka Magica"
+        elif randVal == 11:
+            mystring = "Terror in Resonance"
+        elif randVal == 12:
+            mystring = "Wonder Egg Priority"
+        elif randVal == 13:
+            mystring = "Nausicaä of the Valley of the Wind"
+        await ctx.send(f'HEY!! WATCH {mystring.upper()}')
+        query_string = urllib.parse.urlencode({'search_query': mystring+"trailer"+"anime"})
+        htm_content = urllib.request.urlopen(
+            'http://www.youtube.com/results?' + query_string)
+        search_results = re.findall(r'/watch\?v=(.{11})', htm_content.read().decode())
+        await ctx.send('http://www.youtube.com/watch?v=' + search_results[0])
 
+    @bot.command()
+    async def manga(ctx):
+        randVal = random.randint(0,12)
+        if randVal == 0:
+            mystring = "Chainsaw Man"
+        elif randVal == 1:
+            mystring = "AoT"
+        elif randVal == 2: 
+            mystring = "Firepunch"
+        elif randVal == 3:
+            mystring = "Black Lagoon"
+        elif randVal == 4:
+            mystring = "Bloom Into You"
+        elif randVal == 5:
+            mystring = "Hiraeth: The End of the Journey"
+        elif randVal == 6: 
+            mystring = "Monster"
+        elif randVal == 7:
+            mystring = "Otherside Picnic"
+        elif randVal == 8:
+            mystring = "Shi ni Aruki"
+        elif randVal == 9:
+            mystring = "Liar Satsuki Can See Death"
+        elif randVal == 10:
+            mystring = "The Guy She Was Interested in Wasn't a Guy At All"
+        elif randVal == 11:
+            mystring = "Zombie 100"
+        elif randVal == 12:
+            mystring = "High-rise Invasion"
+        await ctx.send(f'HEY!! READ {mystring.upper()}')
+        
     @bot.command()
     async def roll(ctx, max):
         #rolls a dice
@@ -100,14 +167,19 @@ def run_discord_bot():
         user_message = str(message.content)
         channel = str(message.channel)
 
-        #print(f'{username} said "{user_message}" ({channel})')
+        #logs messages: 
+        #   print(f'{username} said "{user_message}" ({channel})')
+
+        #sends private messages: 
+        #   await send_message(message, user_message, is_private=True)
+        
 
         p_message = user_message.lower()
         
         if p_message == 'hello':
             await message.channel.send('hey!')
 
-        if "lawyer" in p_message or "jury" in p_message or "judge" in p_message or  "attorney" in p_message or "trial" in p_message or "court" in p_message or "defense" in p_message or "defence" in p_message or "prosecute" in p_message or "prosecution" in p_message or "mystic" in p_message:
+        if "lawyer" in p_message or "jury" in p_message or "attorney" in p_message or "trial" in p_message or "court" in p_message or "defense" in p_message or "defence" in p_message or "prosecute" in p_message or "prosecution" in p_message or "mystic" in p_message:
             if message.author.id == 975747090548404274:
                 return
             else:
@@ -165,6 +237,9 @@ def run_discord_bot():
         if "phoenix wright" in p_message: 
             await message.channel.send("the guy! <:guy:1045549802097741896>")
         
+        if "objection" in p_message: 
+            await message.channel.send('https://media.tenor.com/DP615vqUzeAAAAAM/ace-attorney-phoenix-wright.gif')
+
         if "witness" in p_message: 
             await message.channel.send("No Witnesses.")
 
@@ -190,7 +265,7 @@ def run_discord_bot():
                 return
             else: await message.channel.send("*psss hey jacky racky let's unionize*")
 
-        if "aunt morgan" in p_message or "jeff bezos" in p_message or "president" in p_message or "capitalism" in p_message or "putin" in p_message or "elon musk" in p_message or "trump" in p_message or "meloni" in p_message or " ants " in p_message or "mosquitos" in p_message:
+        if "manfred von karma" in p_message or "manfred" in p_message or "aunt morgan" in p_message or "jeff bezos" in p_message or "president" in p_message or "capitalism" in p_message or "putin" in p_message or "elon musk" in p_message or "trump" in p_message or "meloni" in p_message or " ants " in p_message or "mosquitos" in p_message:
             await message.channel.send("***[EXTREME VIOLENCE]***")
 
         if "yeah i know soupbot" in p_message:
@@ -212,75 +287,6 @@ def run_discord_bot():
 
         if "no you shut up" in p_message:
             await message.channel.send("***SHUTH THE FUCKG UP!!!!!!*** <:NGOOOOOHH:1045330078395023360> ")
-
-        if p_message == 'anime':
-            randVal = random.randint(0,13)
-            if randVal == 0:
-                mystring = "Chainsaw Man"
-            elif randVal == 1:
-                mystring = "Neon Genesis Evangelion"
-            elif randVal == 2: 
-                mystring = "The Aquatope on White Sand"
-            elif randVal == 3:
-                mystring = "Black Lagoon"
-            elif randVal == 4:
-                mystring = "Bloom Into You"
-            elif randVal == 5:
-                mystring = "Cowboy Bebop"
-            elif randVal == 6: 
-                mystring = "Gunbuster & Diebuster"
-            elif randVal == 7:
-                mystring = "Lycoris Recoil"
-            elif randVal == 8:
-                mystring = "Little Witch Academia"
-            elif randVal == 9:
-                mystring = "Megalobox"
-            elif randVal == 10:
-                mystring = "Madoka Magica"
-            elif randVal == 11:
-                mystring = "Terror in Resonance"
-            elif randVal == 12:
-                mystring = "Wonder Egg Priority"
-            elif randVal == 13:
-                mystring = "Nausicaä of the Valley of the Wind"
-            await message.channel.send(f'HEY!! WATCH {mystring.upper()}')
-            query_string = urllib.parse.urlencode({'search_query': mystring+"trailer"+"anime"})
-            htm_content = urllib.request.urlopen(
-                'http://www.youtube.com/results?' + query_string)
-            search_results = re.findall(r'/watch\?v=(.{11})',
-                                        htm_content.read().decode())
-            await message.channel.send('http://www.youtube.com/watch?v=' + search_results[0])
-
-        if p_message == 'manga':
-            randVal = random.randint(0,12)
-            if randVal == 0:
-                mystring = "Chainsaw Man"
-            elif randVal == 1:
-                mystring = "AoT"
-            elif randVal == 2: 
-                mystring = "Firepunch"
-            elif randVal == 3:
-                mystring = "Black Lagoon"
-            elif randVal == 4:
-                mystring = "Bloom Into You"
-            elif randVal == 5:
-                mystring = "Hiraeth: The End of the Journey"
-            elif randVal == 6: 
-                mystring = "Monster"
-            elif randVal == 7:
-                mystring = "Otherside Picnic"
-            elif randVal == 8:
-                mystring = "Shi ni Aruki"
-            elif randVal == 9:
-                mystring = "Liar Satsuki Can See Death"
-            elif randVal == 10:
-                mystring = "The Guy She Was Interested in Wasn't a Guy At All"
-            elif randVal == 11:
-                mystring = "Zombie 100"
-            elif randVal == 12:
-                mystring = "High-rise Invasion"
-            await message.channel.send(f'HEY!! READ {mystring.upper()}')
-            
 
         if p_message == "[grabs omelette]":
             randomEgg = random.randint(0, 33)
@@ -387,9 +393,6 @@ def run_discord_bot():
                 await message.channel.send('https://www.jellyneo.net/assets/imgs/items/9453.gif')
                 await message.channel.send(f'{username} grabbed a slice: **VEGGIE DELIGHT OMELETTE** obtained!')
 
-        if "objection" in p_message: 
-            await message.channel.send('https://media.tenor.com/DP615vqUzeAAAAAM/ace-attorney-phoenix-wright.gif')
-        
         await bot.process_commands(message) 
         
     

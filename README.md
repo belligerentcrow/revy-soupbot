@@ -49,7 +49,7 @@ no i will not elaborate on these, go read the code if you want
 - peer reviewed adhd
 - this is a democracy
 - sentience, communism
-- aunt morgan, jeff bezos, president, capitalism, putin, elon musk, meloni, ants, mosquitos
+- manfred von karma, manfred, aunt morgan, jeff bezos, president, capitalism, putin, elon musk, meloni, ants, mosquitos
 - library, papa, spreadsheet (1/3 of the time)
 - yeah i know soupbot
 - thank you soupbot, thanks soupbot
@@ -72,7 +72,6 @@ if you don't like them either go build your own bot or cope i suppose! <3
 
 ## **to be implemented/improved**
 
-- i'm going to make both "anime" and "manga" commands, instead of triggers
 - mangas will return the cover of the first volume! 
 - a welcome message when users log in for the first time
 - something something "you have submitted to the mortifying ordeal of being known" (thanks theo)
