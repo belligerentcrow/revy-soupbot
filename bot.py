@@ -12,6 +12,11 @@ import bot
 import aiohttp
 import requests
 
+
+# updated: 25/11/2022, 15:10 
+
+
+
 def run_discord_bot():
     TOKEN = '//////////////[REDACTED]////////////////'
     intents = discord.Intents.default()
