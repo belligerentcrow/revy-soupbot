@@ -33,6 +33,7 @@
 no i will not elaborate on these, go read the code if you want
   
 - hello
+- hello???
 - lawyer, attorney, jury, judge, trial, court, defense, defence, prosecution, prosecute, mystic
 - deathloop, deathlopo, deathpoop
 - eating you, eating yuo, eats you, eats yuo, vore, cannibalism
@@ -55,10 +56,10 @@ no i will not elaborate on these, go read the code if you want
 - manfred von karma, manfred, aunt morgan, jeff bezos, president, capitalism, putin, elon musk, meloni, ants, mosquitos
 - library, papa, spreadsheet (1/3 of the time)
 - yeah i know soupbot
-- thank you soupbot, thanks soupbot
-- soupbot stop it, shut up soupbot
+- thank you soupbot, thanks soupbot, thanks revy, thank you revy
+- soupbot stop it, shut up soupbot, revy stop it, shut up revy
 - no YOU shut up
-- typo in groupchat
+- typo in groupchat, typo in group chat
 
 ***
 

@@ -192,6 +192,9 @@ def run_discord_bot():
         
         if p_message == 'hello':
             await message.channel.send('hey!')
+        
+        if p_message == 'hello???':
+            await message.channel.send('I Am Alive.')
 
         if "lawyer" in p_message or "jury" in p_message or "attorney" in p_message or "trial" in p_message or "court" in p_message or "defense" in p_message or "defence" in p_message or "prosecute" in p_message or "prosecution" in p_message or "mystic" in p_message:
             if message.author.id == 975747090548404274:
@@ -298,7 +301,7 @@ def run_discord_bot():
         if 'thank you soupbot' in p_message or 'thanks soupbot' in p_message or 'thanks revy' in p_message or 'thank you revy' in p_message:
             await message.channel.send("np")
           
-        if "soupbot stop it" in p_message or "shut up soupbot" in p_message:
+        if "soupbot stop it" in p_message or "shut up soupbot" in p_message or "revy stop it" in p_message or "shut up revy" in p_message:
             await message.channel.send("NO **YOU** SHUT UP!!!")
 
         if "no you shut up" in p_message:
