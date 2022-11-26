@@ -45,7 +45,7 @@ def run_discord_bot():
             # Print image source
                 print(image['src'])
             kittty = image['src']
-            await message.channel.send(f'https://cataas.com{kittty}')
+            await ctx.send(f'https://cataas.com{kittty}')
 
 
     @bot.command()
