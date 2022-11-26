@@ -58,6 +58,7 @@ no i will not elaborate on these, go read the code if you want
 - thank you soupbot, thanks soupbot
 - soupbot stop it, shut up soupbot
 - no YOU shut up
+- typo in groupchat
 
 ***
 
