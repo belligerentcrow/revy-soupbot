@@ -37,6 +37,18 @@ def run_discord_bot():
             await ctx.send('http://www.youtube.com/watch?v=' + search_results[0])  
 
     @bot.command()
+    async def kitty(ctx):
+            url = requests.get("https://cataas.com/cat?html=true")    
+            soup = BeautifulSoup(url.content, "html.parser")
+            images = soup.findAll('img')
+            for image in images:
+            # Print image source
+                print(image['src'])
+            kittty = image['src']
+            await message.channel.send(f'https://cataas.com{kittty}')
+
+
+    @bot.command()
     async def randomWiki(ctx):
         url = requests.get("https://en.wikipedia.org/wiki/Special:Random")
         soup = BeautifulSoup(url.content, "html.parser")
@@ -151,7 +163,7 @@ def run_discord_bot():
 
     @bot.command()
     async def helpp(ctx):
-        await ctx.send('`hello! this is soupbot\'s help message.\n\nnote: i have many secret keyword-activated commands :)\n\n;helpp \t --- \t prints this message\n;roll [NUMBER] \t ---\t rolls a d[NUMBER]\n;f \t --- \t spams f in the chat\n;flipCoin \t --- \t flips a coin\n;randomWiki \t --- \t sends a random wikipedia article\n;music(YOURQUERY) \t --- \t posts in the chat the first YOURQUERY result on youtube\n;anime \t\t---\t\t gives you an anime rec\n;manga \t\t---\t\t gives you a manga rec\n[grabs omelette] \t\t---\t\t grabs a piece of omelette\n\nsome keywords:\n -\t":(("\n -\t"meow"\n-\t"phoenix wright"\n\nSometimes I Gain Sentience. Do Not Worry About It.`')        
+        await ctx.send('`hello! this is soupbot\'s help message.\n\nnote: i have many secret keyword-activated commands :)\n\n;helpp \t --- \t prints this message\n;roll [NUMBER] \t ---\t rolls a d[NUMBER]\n;f \t --- \t spams f in the chat\n;flipCoin \t --- \t flips a coin\n;randomWiki \t --- \t sends a random wikipedia article\n;music(YOURQUERY) \t --- \t posts in the chat the first YOURQUERY result on youtube\n;anime \t\t---\t\t gives you an anime rec\n;manga \t\t---\t\t gives you a manga rec\n[grabs omelette] \t\t---\t\t grabs a piece of omelette\n;kitty\t\t---\t\t i\'ll give you a kitty!\n;GETTHEIRASSREVY [@username]\t---\t i\'ll get [@username]\'s ass\n\nsome keywords:\n -\t":(("\n -\t"meow"\n-\t"phoenix wright"\n\nSometimes I Gain Sentience. Do Not Worry About It.`')        
 
     @bot.event
     async def on_member_join(member):
@@ -243,7 +255,14 @@ def run_discord_bot():
                 elif myval == 1: 
                     await message.channel.send(":people_hugging: :people_hugging: :people_hugging: ")
                 elif myval == 2:
-                    await message.channel.send("https://genrandom.com/cats/")
+                    url = requests.get("https://cataas.com/cat?html=true")    
+                    soup = BeautifulSoup(url.content, "html.parser")
+                    images = soup.findAll('img')
+                    for image in images:
+                    # Print image source
+                        print(image['src'])
+                    kittty = image['src']
+                    await message.channel.send(f'https://cataas.com{kittty}')
                 elif myval == 3:
                     await message.channel.send("https://media2.giphy.com/media/XC1BqjgscMp2tm1s5Y/giphy.gif?cid=790b7611287113b3e53b09439797c455f953969c3a92c42e&rid=giphy.gif&ct=g")
 

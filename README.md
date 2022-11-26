@@ -26,6 +26,8 @@
 - ```;manga``` - replies with a random manga from a list of the ones i like
   - if you don't like these recs either go build your own bot or cope i suppose! <3
 - ```;GETTHEIRASSREVY @usertag``` -  she will commit unspeakable acts of violence towards that one guy. not me tho
+- ```;kitty``` - she will give you a kitty
+
 ***
 
 ## **list of triggering keywords**
