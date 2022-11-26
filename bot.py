@@ -12,10 +12,12 @@ import bot
 import aiohttp
 import requests
 
-# UPDATED: 25/11/2022, 15:22
+# UPDATED: 26/11/2022, 11:30
+
+# REMEMBER NOT TO COPY THE TOKEN IN THE GITHUB FILE
 
 def run_discord_bot():
-    TOKEN = '///////////////////////[REDACTED]/////////////////////////'
+    TOKEN = "/////////////////////TOKEN////////////////"
     intents = discord.Intents.default()
     intents.message_content = True
     intents.members = True; 
@@ -152,10 +154,24 @@ def run_discord_bot():
         await ctx.send('`hello! this is soupbot\'s help message.\n\nnote: i have many secret keyword-activated commands :)\n\n;helpp \t --- \t prints this message\n;roll [NUMBER] \t ---\t rolls a d[NUMBER]\n;f \t --- \t spams f in the chat\n;flipCoin \t --- \t flips a coin\n;randomWiki \t --- \t sends a random wikipedia article\n;music(YOURQUERY) \t --- \t posts in the chat the first YOURQUERY result on youtube\n\n \t\t ---\t\t\n\nsome keywords:\n:((\t\t -- \t\t meow \t\t --- \t\t anime \t\t --- \t\t manga \t\t\nneopets core --->[grab omelette]<--\n\nSometimes I Gain Sentience. Do Not Worry About It.`')
 
     @bot.event
+    async def on_member_join(member):
+        channel = bot.get_channel(CHANNELID)
+        await channel.send(f"{member.mention} just joined!! omg hii! \nWelcome to {member.guild.name}!\nPost your intro in <#INTROCHANNELID> and then visit the <#CRINGECOMPID> to get a feel of the server!\n <#ETCID> is our pride and honour and <#GENID> is gen.\n For any doubts you can ask <@&ROLE1> or <@&ROLE2>!")
+
+    @bot.command()
+    async def GETTHEIRASSREVY(ctx, arg):
+        mess = str(arg).lower()
+        if "YOURTAG" in mess or "YOURTAG" in mess or "YOURTAG" in mess or "YOURNAME" in mess or "YOURNAME" in mess or "YOURNAME" in mess:
+            await ctx.send("no :pensive:")
+        else: 
+            await ctx.send(f'{arg} {arg} {arg} {arg} <:scarylaugh:976183216098639873> <:scarylaugh:976183216098639873> <:scarylaugh:976183216098639873> <:scarylaugh:976183216098639873> <:scarylaugh:976183216098639873> <:scarylaugh:976183216098639873> <:scarylaugh:976183216098639873> <:scarylaugh:976183216098639873> <:scarylaugh:976183216098639873> <:scarylaugh:976183216098639873>')
+
+    @bot.event
     async def on_ready():
             print(f'{bot} is now running!')
             # Setting `Watching ` status
             await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="you suffer"))    
+
     @bot.event
     async def on_message(message):
         if message.author.id == 975747090548404274:
@@ -189,8 +205,7 @@ def run_discord_bot():
         if "eating you" in p_message or "eating yuo" in p_message or "eats you" in p_message or "eats yuo" in p_message or "vore" in p_message or "cannibalism" in p_message:
             if message.author.id == 975747090548404274:
                 return
-            else:
-                await message.channel.send("0 days since v*re mentions :pensive:")
+            else: await message.channel.send("0 days since v*re mentions :pensive:")
         
         if "mold" in p_message:
             myval = random.randint(0, 2)
@@ -276,6 +291,9 @@ def run_discord_bot():
 
         if "deez" in p_message:
             await message.channel.send("nuts")
+
+        if "typo in groupchat" in p_message:
+            await message.channel.send("TYPO IN GROUPCHAT")
 
         if p_message == 'thank you soupbot' or p_message == 'thanks soupbot':
             await message.channel.send("np")

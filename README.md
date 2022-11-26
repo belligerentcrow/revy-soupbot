@@ -1,8 +1,8 @@
-# revy-soupbot
+# **revy-soupbot**
 
  a very funny discord bot in python
 
-## how to activate
+## **how to activate**
 
 - you need to have python 3+ and pip installed
 - you need to have discord.py installed
@@ -12,7 +12,7 @@
 
 - profit 👍
 
-## commands
+## **commands**
 
 - ```;music [YourQuery]``` - sends in chat the first youtube search result for "YourQuery". "YourQuery" should be a single string
   - Example: ```;music BlackSailsOpening```
@@ -25,10 +25,10 @@
 - ```;anime``` - replies with a random anime from a list of the ones i like and sends the first youtube trailer she finds with that query
 - ```;manga``` - replies with a random manga from a list of the ones i like
   - if you don't like these recs either go build your own bot or cope i suppose! <3
-
+- ```;GETTHEIRASSREVY @usertag``` -  she will commit unspeakable acts of violence towards that one guy. not me tho
 ***
 
-## list of triggering keywords
+## **list of triggering keywords**
   
 no i will not elaborate on these, go read the code if you want
   
@@ -61,13 +61,16 @@ no i will not elaborate on these, go read the code if you want
 
 ***
 
-## more "complex" trigger words
-
-
+## **more "complex" trigger words**
 
 - ```i'm sad```, ```:((``` - sends one uplifting thing from a list, choosing one at random
 
 -  ```[grabs omelette]``` - the Neopets' Big Omelette game; returns a piece of the Big Omelette with name and picture of your loot!
+
+
+## **other things she does**
+
+- personalized welcome message
 
 ## **to be implemented/improved**
 
@@ -75,4 +78,3 @@ no i will not elaborate on these, go read the code if you want
 - a welcome message when users log in for the first time
 - something something "you have submitted to the mortifying ordeal of being known" (thanks theo)
 - memes
-- "GET THEM REVY @usertag" or smth and she will commit unspeakable acts of violence towards that one guy i suppose. not me tho
