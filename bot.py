@@ -151,7 +151,7 @@ def run_discord_bot():
 
     @bot.command()
     async def helpp(ctx):
-        await ctx.send('`hello! this is soupbot\'s help message.\n\nnote: i have many secret keyword-activated commands :)\n\n;helpp \t --- \t prints this message\n;roll [NUMBER] \t ---\t rolls a d[NUMBER]\n;f \t --- \t spams f in the chat\n;flipCoin \t --- \t flips a coin\n;randomWiki \t --- \t sends a random wikipedia article\n;music(YOURQUERY) \t --- \t posts in the chat the first YOURQUERY result on youtube\n\n \t\t ---\t\t\n\nsome keywords:\n:((\t\t -- \t\t meow \t\t --- \t\t anime \t\t --- \t\t manga \t\t\nneopets core --->[grab omelette]<--\n\nSometimes I Gain Sentience. Do Not Worry About It.`')
+        await ctx.send('`hello! this is soupbot\'s help message.\n\nnote: i have many secret keyword-activated commands :)\n\n;helpp \t --- \t prints this message\n;roll [NUMBER] \t ---\t rolls a d[NUMBER]\n;f \t --- \t spams f in the chat\n;flipCoin \t --- \t flips a coin\n;randomWiki \t --- \t sends a random wikipedia article\n;music(YOURQUERY) \t --- \t posts in the chat the first YOURQUERY result on youtube\n;anime \t\t---\t\t gives you an anime rec\n;manga \t\t---\t\t gives you a manga rec\n[grabs omelette] \t\t---\t\t grabs a piece of omelette\n\nsome keywords:\n -\t":(("\n -\t"meow"\n-\t"phoenix wright"\n\nSometimes I Gain Sentience. Do Not Worry About It.`')        
 
     @bot.event
     async def on_member_join(member):
@@ -292,12 +292,12 @@ def run_discord_bot():
         if "deez" in p_message:
             await message.channel.send("nuts")
 
-        if "typo in groupchat" in p_message:
+        if "typo in groupchat" in p_message or "typo in group chat" in p_message:
             await message.channel.send("TYPO IN GROUPCHAT")
 
-        if p_message == 'thank you soupbot' or p_message == 'thanks soupbot':
+        if 'thank you soupbot' in p_message or 'thanks soupbot' in p_message or 'thanks revy' in p_message or 'thank you revy' in p_message:
             await message.channel.send("np")
-        
+          
         if "soupbot stop it" in p_message or "shut up soupbot" in p_message:
             await message.channel.send("NO **YOU** SHUT UP!!!")
 
