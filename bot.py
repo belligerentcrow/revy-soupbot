@@ -284,7 +284,7 @@ def run_discord_bot():
         if "manfred von karma" in p_message or "manfred" in p_message or "aunt morgan" in p_message or "jeff bezos" in p_message or "president" in p_message or "capitalism" in p_message or "putin" in p_message or "elon musk" in p_message or "trump" in p_message or "meloni" in p_message or " ants " in p_message or "mosquitos" in p_message:
             await message.channel.send("***[EXTREME VIOLENCE]***")
 
-        if "yeah i know soupbot" in p_message:
+        if "yeah i know soupbot" in p_message or "yeah i know revy" in p_message:
             await message.channel.send(":pensive:")
 
         if "library" in p_message or "papa" in p_message or "spreadsheet" in p_message:

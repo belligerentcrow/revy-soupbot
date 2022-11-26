@@ -55,7 +55,7 @@ no i will not elaborate on these, go read the code if you want
 - sentience, communism
 - manfred von karma, manfred, aunt morgan, jeff bezos, president, capitalism, putin, elon musk, meloni, ants, mosquitos
 - library, papa, spreadsheet (1/3 of the time)
-- yeah i know soupbot
+- yeah i know soupbot, yeah i know revy
 - thank you soupbot, thanks soupbot, thanks revy, thank you revy
 - soupbot stop it, shut up soupbot, revy stop it, shut up revy
 - no YOU shut up
