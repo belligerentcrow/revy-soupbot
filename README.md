@@ -76,6 +76,5 @@ no i will not elaborate on these, go read the code if you want
 ## **to be implemented/improved**
 
 - mangas will return the cover of the first volume! 
-- a welcome message when users log in for the first time
 - something something "you have submitted to the mortifying ordeal of being known" (thanks theo)
 - memes
